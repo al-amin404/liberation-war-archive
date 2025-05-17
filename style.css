@@ -1,0 +1,82 @@
+#sidebar-active{
+    display: none;
+}
+
+.nav-links-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.open-sidebar-btn , .close-sidebar-btn{
+    display: none;
+}
+
+.hero-section{
+    background-image: url('/images/hero-img.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.page-banner-section{
+    background-image: url('/images/hero-img.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat; 
+}
+
+.slider .img:not(.img:first-child){
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-links-container{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 20;
+        width: 220px;
+        background-color: rgba(6, 153, 38, 0.5);
+        transition: 0.5s;
+        backdrop-filter: blur(30px);
+    }
+
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .nav-links-container a.nav-link:hover{
+        background-color: var(--slate-white);
+        color: rgb(15, 21, 42);
+    }
+
+    .open-sidebar-btn , .close-sidebar-btn{
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .nav-links-container{
+        left: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 15;
+        backdrop-filter: blur(5px);
+    }
+}
