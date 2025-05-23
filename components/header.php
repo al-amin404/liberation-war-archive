@@ -41,12 +41,12 @@
                     </svg>
                 </label>
                 <ul
-                    class="flex flex-col md:flex-row gap-4 *:text-slate-200 *:hover:text-white *:text-lg *:font-medium underline-offset-8 *:hover:underline">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/documents.php">War Documents</a></li>
-                    <li><a href="/interviews.php">Interviews</a></li>
-                    <li><a href="/gallery.php">Photographs</a></li>
-                    <li><a href="/contact.php">Contact</a></li>
+                    class="flex flex-col md:flex-row gap-4 md:gap-8 *:text-slate-300 *:hover:text-white *:text-lg font-serif *:font-semibold underline-offset-8 *:hover:underline">
+                    <li><a href="/" class="<?= $_SERVER['REQUEST_URI'] == '/' ? 'text-white underline' : '' ?>">Home</a></li>
+                    <li><a href="/documents.php" class="<?= $_SERVER['REQUEST_URI'] == '/documents.php' ? 'text-white underline' : '' ?>">War Documents</a></li>
+                    <li><a href="/interviews.php" class="<?= $_SERVER['REQUEST_URI'] == '/interviews.php' ? 'text-white underline' : '' ?>">Interviews</a></li>
+                    <li><a href="/gallery.php" class="<?= $_SERVER['REQUEST_URI'] == '/gallery.php' ? 'text-white underline' : '' ?>">Photographs</a></li>
+                    <li><a href="/contact.php" class="<?= $_SERVER['REQUEST_URI'] == '/contact.php' ? 'text-white underline' : '' ?>">Contact</a></li>
                 </ul>
             </div>
         </nav>
