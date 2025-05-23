@@ -1,12 +1,11 @@
 <?php include('components/header.php') ?>
 
-<main class="min-h-[80vh]">
     <section class="hero-section relative min-h-[90vh] flex items-center justify-center">
         <div class="absolute top-0 bottom-0 w-full h-full bg-linear-to-b from-green-700/90 from-20% to-red-700/60"></div>
         <div class="hero-content py-8 px-4 md:py-20 md:px-16 bg-slate-100/20 backdrop-blur-lg md:w-[60%]">
             <p class="text-4xl text-white font-serif font-bold">Welcome to <span class="text-green-800">Liberation War
                     Archive</span></p>
-            <p class="mt-4 mb-8 text-base text-white">
+            <p class="mt-4 mb-8 text-base text-white text-justify">
                 Liberation War e-Archive, is a 'Library, Archive & Research' organization, founded in 2007, working with
                 collection, preservation & distribution of historical documents & research on the Liberation War of
                 Bangladesh and Genocide of Innocent Bengali People in 1971. It was previously known as 'Bangladesh
@@ -33,26 +32,26 @@
             <div class="slider transition-all *:w-[80vw] overflow-hidden my-8">
                 <div class="img relative flex flex-col items-center justify-center">
                     <img src="/images/slider-img-1.jpg" alt="image-1" width="100%">
-                    <div class="slider-caption max-w-[80%] flex flex-col gap-4 bg-green-700/80 text-white p-4 md:p-8 absolute bottom-[150px]">
+                    <div class="slider-caption max-w-[80%] flex flex-col gap-8 bg-green-700/80 text-white p-4 md:p-8 hidden md:block absolute md:bottom-[150px]">
                         <h2 class="text-2xl text-slate-100 font-semibold font-serif">Liberation War Heroes</h2>
-                        <p>Stories of bravery and sacrifice that shaped our nation.</p>
+                        <p class="mb-4">Stories of bravery and sacrifice that shaped our nation.</p>
                         <a href="/interviews.php" class="py-2 px-4 bg-red-700 rounded-md text-white w-max">Listen to Their Stories</a>
                     </div>
                 </div>
                 <div class="img flex items-center justify-center">
                     <img src="/images/slider-img-2.jpg" alt="image-1" width="100%">
-                    <div class="slider-caption max-w-[60%] flex flex-col gap-4 bg-green-700/80 text-white p-4 md:p-8 absolute bottom-[150px]">
+                    <div class="slider-caption max-w-[60%] flex flex-col gap-8 bg-green-700/80 text-white p-4 md:p-8 hidden md:block absolute md:bottom-[150px]">
                         <h2 class="text-2xl text-slate-100 font-semibold font-serif">Historical War Documents</h2>
-                        <p>Document and Stories of bravery and sacrifice that shaped our nation.</p>
+                        <p class="mb-4">Document and Stories of bravery and sacrifice that shaped our nation.</p>
                         <a href="/documents.php" class="py-2 px-4 bg-red-700 rounded-md text-white w-max">Read Documents</a>
                     </div>
                 </div>
                 <div class="img flex items-center justify-center">
                     <img src="/images/slider-img-3.jpg" alt="image-1" width="100%">
-                    <div class="slider-caption max-w-[80%] flex flex-col gap-4 bg-green-700/80 text-white p-4 md:p-8 absolute bottom-[150px]">
+                    <div class="slider-caption max-w-[80%] flex flex-col gap-8 bg-green-700/80 text-white p-4 md:p-8 hidden md:block absolute md:bottom-[150px]">
                         <h2 class="text-2xl text-slate-100 font-semibold font-serif">Photo Gallery</h2>
-                        <p>A visual journey through the Liberation War of Bangladesh. Stories of bravery and sacrifice.</p>
-                        <a href="pages/interviews.html" class="py-2 px-4 bg-red-700 rounded-md text-white w-max">View Gallery</a>
+                        <p class="mb-4">A visual journey through the Liberation War of Bangladesh. Stories of bravery and sacrifice.</p>
+                        <a href="/gallery.php" class="py-2 px-4 bg-red-700 rounded-md text-white w-max">View Gallery</a>
                     </div>
                 </div>
             </div>
@@ -69,13 +68,13 @@
 
         <div class="archives flex flex-col justify-center min-h-[60vh]">
             <h1 class="text-4xl text-center text-red-400 font-serif underline mt-4">War Archives</h1>
-            <div class="flex mb-12 *:w-[25%] justify-center gap-3 py-8 md:py-12 transition-all *:bg-slate-100 *:border *:border-green-700 *:shadow-md *:hover:shadow-lg *:hover:-translate-y-4">
+            <div class="flex flex-wrap mb-12 *:max-w-[80%] sm:*:w-[320px] md:*:w-[25%] justify-center gap-3 py-8 md:py-12 transition-all *:bg-slate-100 *:border *:border-green-700 *:shadow-md *:hover:shadow-lg *:hover:-translate-y-2 *:transition-all *:duration-300">
                 <div class="flex flex-col gap-3 p-4 md:p-8 items-center justify-between">
                     <i class="fas fa-file-alt fa-3x text-green-700 mb-3 text-primary"></i>
                     <h2 class="text-xl text-center font-serif font-semibold text-green-700">Historical Documents</h2>
                     <p class="text-center mb-2">Explore official correspondence, treaties, and declarations from the
                         Liberation War period.</p>
-                    <a href="#" class="py-2 px-3 border border-green-700 hover:bg-green-700 rounded-md text-green-700 hover:text-white">View Documents
+                    <a href="/documents.php" class="py-2 px-3 border border-green-700 hover:bg-green-700 rounded-md text-green-700 hover:text-white">View Documents
                     </a>
                 </div>
                 <div class="flex flex-col gap-3 p-4 md:p-8 items-center justify-center">
@@ -83,7 +82,7 @@
                     <h2 class="text-xl text-center font-serif font-semibold text-green-700">Oral Histories</h2>
                     <p class="text-center mb-2">Listen to firsthand accounts from freedom fighters and witnesses of the
                         Liberation War.</p>
-                    <a href="#"
+                    <a href="/interviews.php"
                         class="py-2 px-3 border border-green-700 hover:bg-green-700 rounded-md text-green-700 hover:text-white">Listen
                         Recording</a>
                 </div>
@@ -92,7 +91,7 @@
                     <h2 class="text-xl text-center font-serif font-semibold text-green-700">Photo Gallery</h2>
                     <p class="text-center mb-2">Browse through our collection of historical photographs documenting the
                         struggle for independence.</p>
-                    <a href="#"
+                    <a href="/gallery.php"
                         class="py-2 px-3 border border-green-700 hover:bg-green-700 rounded-md text-green-700 hover:text-white">Browse
                         Gallery</a>
                 </div>
@@ -106,7 +105,7 @@
             <h1 class="text-4xl text-red-400 font-serif underline mb-4">About Liberation War Archive</h1>
             <div class="flex flex-col-reverse lg:flex-row gap-4 justify-center items-center">
                 <div class="content font-serif lg:w-[50%]">
-                    <p class="font-serif"><span class="text-xl text-green-700"> Liberation War Archive for Bangladesh</span>, often known as the Muktijuddho e-Archive, is a
+                    <p class="font-serif text-justify"><span class="text-xl text-green-700"> Liberation War Archive for Bangladesh</span>, often known as the Muktijuddho e-Archive, is a
                         significant digital initiative dedicated to preserving and providing access to historical
                         documents and resources related to the 1971 Bangladesh Liberation War. It serves as a valuable
                         repository for researchers, students, and the general public interested in learning about this
@@ -137,7 +136,6 @@
             </div>
         </div>
     </section>
-</main>
 
 <script src="/slider.js"></script>
 <?php include('components/footer.php') ?>

@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="flex flex-row justify-between items-center bg-green-700 p-4 px-8">
+    <header class="flex flex-row justify-between items-center bg-green-700 gap-8 p-4 px-8">
         <div class="logo">
             <a href="/"><img src="logo.png" alt="Liberation War Archive" class="font-bold font-serif text-2xl text-white hover:text-red-700"></a>
         </div>
@@ -41,9 +41,9 @@
                     </svg>
                 </label>
                 <ul
-                    class="flex flex-col md:flex-row gap-4 md:gap-8 *:text-slate-300 *:hover:text-white *:text-lg font-serif *:font-semibold underline-offset-8 *:hover:underline">
+                    class="flex flex-col md:flex-row gap-2 md:gap-4 lg:gap-8 *:text-slate-300 *:hover:text-white md:*:text-sm lg:*:text-base font-serif *:font-semibold underline-offset-8 *:hover:underline">
                     <li><a href="/" class="<?= $_SERVER['REQUEST_URI'] == '/' ? 'text-white underline' : '' ?>">Home</a></li>
-                    <li><a href="/documents.php" class="<?= $_SERVER['REQUEST_URI'] == '/documents.php' ? 'text-white underline' : '' ?>">War Documents</a></li>
+                    <li><a href="/documents.php" class="<?= $_SERVER['REQUEST_URI'] == '/documents.php' ? 'text-white underline' : '' ?>">Documents</a></li>
                     <li><a href="/interviews.php" class="<?= $_SERVER['REQUEST_URI'] == '/interviews.php' ? 'text-white underline' : '' ?>">Interviews</a></li>
                     <li><a href="/gallery.php" class="<?= $_SERVER['REQUEST_URI'] == '/gallery.php' ? 'text-white underline' : '' ?>">Photographs</a></li>
                     <li><a href="/contact.php" class="<?= $_SERVER['REQUEST_URI'] == '/contact.php' ? 'text-white underline' : '' ?>">Contact</a></li>
@@ -51,3 +51,4 @@
             </div>
         </nav>
     </header>
+    <main class="min-h-[90vh]">

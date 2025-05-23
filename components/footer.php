@@ -1,6 +1,7 @@
+</main>
 <footer class="text-center text-white bg-green-700 py-4">
     <p id="time" class="text-lg mb-2"></p>
-    &copy; 2025 Agricultural Information Hub. All rights reserved.
+    &copy; <span id="cp-year"></span> Liberation War Archive. All rights reserved.
 </footer>
 
 <script src="main.js"></script>
